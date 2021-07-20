@@ -26,33 +26,119 @@
     .nav-tabs {
         margin-bottom: 0;
     }
+
+    /* Header details *//cdn.jsdelivr.net/npm/
+    body { 
+        margin: 0;
+        font-family: Arial, helvetica, sans-serif;
+    }
+    .header {
+        overflow: hidden;
+        background-color: #f1f1f1;
+        padding: 20px 10px
+    }
+
+    .header a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+    }
+
+    .header a.logo {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .header a:hover {
+        background-color: dodgerblue;
+        color: white;
+    }
+
+    .header-right {
+        float: right;
+    }
+
+    /* Side Navigation Bar *//cdn.jsdelivr.net/npm/
+    .sidenav { 
+        height: 100%;
+        width: 160px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px
+    }
+
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+    }
+
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .main {
+        margin-left: 160px; /* Same as the width of the sidenav */
+        font-size: 28px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .header a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+        .header-right {
+            float: none;
+        }
+        .sidenav {
+            padding-top: 15px;
+        }
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+
     </style>
 
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
-    <!-- Name, position, and picture below-->
+    <!--Header-->
     <body>
-      <p>Luann Dias
+        <div class="header">
+        <a href="#default" class="logo"> Luann Dias</a>
         <br>Entry Level Software Engineer
-      </p>
+            <div class="header-right">
+                <a class="active" href="#home">Home</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </div>
+        </div>
+
+        <div class="sidenav">
+            <a href="#about">About</a>
+            <a href="#services">Experiences</a>
+            <a href="#clients">Projects</a>
+            <a href="#contact">Skills</a>
+            <a href="#contact">Education</a>
+            <a href="#contact">Contact</a>
+            <a href="#contact">Resume</a>
+        </div>
     </body>
-    <!--Shortcuts and Pages-->
-    <body>
-      <p> About
-        <br> Experiences
-        <br> Projects
-        <br> Skills
-        <br> Education
-        <br> Contact
-        <br> Resume
-      </p>
-    </body>
-
 
     <body>
-
     <div class = "container">
         <div class = "page-header">
             <h1> Bootstrap Tutorial</h1>
@@ -61,7 +147,7 @@
             <p> This is a test. </p>
             <p> 
                 <!-- Button Examples -->
-                <a href="#" class="btn btn-default btn-lg" role="button"> More Info</a>
+                <a href="#" class="btn btn-default btn-lg" role="button">More Info</a>
                 <button type="submit" class="btn btn-danger" role="button"> Button </button>
                 <input type="button" value="Info" class="btn btn-info">
                 <button type="submit" class="btn-primary btn-sm"> Primary-s</button>
