@@ -1,247 +1,150 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>Luann Dias - Portfolio</title>
 
-    <style>
-    .jumbotron{
-        background-color:#2E2D88;
-        color:white;
-    }
+     <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 
-    /* Adds borders for tabs */
-    .tab-content {
-        border-left: 1px solid #ddd;
-        border-right: 1px solid #ddd;
-        border-bottom: 1px solid #ddd;
-        padding: 10px;
-    }
-    .nav-tabs {
-        margin-bottom: 0;
-    }
+     <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
-    /* Header details *//cdn.jsdelivr.net/npm/
-    body { 
-        margin: 0;
-        font-family: Arial, helvetica, sans-serif;
-    }
-    .header {
-        overflow: hidden;
-        background-color: #f1f1f1;
-        padding: 20px 10px
-    }
+</head>
 
-    .header a {
-        float: left;
-        color: black;
-        text-align: center;
-        padding: 12px;
-        text-decoration: none;
-        font-size: 18px;
-        line-height: 25px;
-        border-radius: 4px;
-    }
+<body>
 
-    .header a.logo {
-        font-size: 25px;
-        font-weight: bold;
-    }
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <img src="Portrait.jpg" style="width:210px; height:270px;">
 
-    .header a:hover {
-        background-color: dodgerblue;
-        color: white;
-    }
-
-    .header-right {
-        float: right;
-    }
-
-    /* Side Navigation Bar *//cdn.jsdelivr.net/npm/
-    .sidenav { 
-        height: 100%;
-        width: 160px;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: #111;
-        overflow-x: hidden;
-        padding-top: 20px
-    }
-
-    .sidenav a {
-        padding: 6px 8px 6px 16px;
-        text-decoration: none;
-        font-size: 25px;
-        color: #818181;
-        display: block;
-    }
-
-    .sidenav a:hover {
-        color: #f1f1f1;
-    }
-
-    .main {
-        margin-left: 160px; /* Same as the width of the sidenav */
-        font-size: 28px; /* Increased text to enable scrolling */
-        padding: 0px 10px;
-    }
-
-    @media screen and (max-height: 450px) {
-        .header a {
-            float: none;
-            display: block;
-            text-align: left;
-        }
-        .header-right {
-            float: none;
-        }
-        .sidenav {
-            padding-top: 15px;
-        }
-        .sidenav a {
-            font-size: 18px;
-        }
-    }
-
-    </style>
-
-  </head>
-  <body>
-    <!--Header-->
-    <body>
-        <div class="header">
-        <a href="#default" class="logo"> Luann Dias</a>
-        <br>Entry Level Software Engineer
-            <div class="header-right">
-                <a class="active" href="#home">Home</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
+                <h3>Luann Dias</h3>
             </div>
-        </div>
 
-        <div class="sidenav">
-            <a href="#about">About</a>
-            <a href="#services">Experiences</a>
-            <a href="#clients">Projects</a>
-            <a href="#contact">Skills</a>
-            <a href="#contact">Education</a>
-            <a href="#contact">Contact</a>
-            <a href="#contact">Resume</a>
-        </div>
-    </body>
+            <ul class="list-unstyled components">
+                <p>Software Engineer</p>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Experiences</a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Projects</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">BudgeIt</a>
+                        </li>
+                        <li>
+                            <a href="#">Visual Studio Extensions</a>
+                        </li>
+                        <li>
+                            <a href="#">AI Stock Market Predictor</a>
+                        </li>
+                        <li>
+                            <a href="#">DNA Sequence Alignment</a>
+                        </li>
+                        <li>
+                            <a href="#">Pythagoras Tree</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Skills</a>
+                </li>
+                <li>
+                    <a href="#">Education</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
 
-    <body>
-    <div class = "container">
-        <div class = "page-header">
-            <h1> Bootstrap Tutorial</h1>
-        </div>
-        <div class = "jumbotron"> <!--Enlarges fonts and put contents in a colored box-->
-            <p> This is a test. </p>
-            <p> 
-                <!-- Button Examples -->
-                <a href="#" class="btn btn-default btn-lg" role="button">More Info</a>
-                <button type="submit" class="btn btn-danger" role="button"> Button </button>
-                <input type="button" value="Info" class="btn btn-info">
-                <button type="submit" class="btn-primary btn-sm"> Primary-s</button>
-                <button type="submit" class="btn btn-success btn-xs"> Success-xs </button>
-                <button type="submit" class="btn btn-warning btn-lg"> Warning-lg </button>
-                <button type="submit" class="btn btn-link btn-lg"> Link-lg </button>
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://github.com/LDias97/Resume/raw/main/Luann%20Dias%20Resume%202021.pdf" class="download">Download Resume</a>
+                </li>
+            </ul>
+        </nav>
 
-                <!-- Disable and Enable Buttons, Links, etc. -->
-                <button type="button" class="btn btn-lg btn-primary" disabled="disabled"> Disabled </button>
-                <a href="#" class="btn btn-default btn-lg disabled" role="button"> Link </a>
+        <!-- Page Content -->
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
 
-                <!-- Button Groups-->
-                <div class="btn-group btn-group-lg" role="group">
-                    <button type="button" class="btn btn-default"> Small </button>
-                    <button type="button" class="btn btn-default"> Medium </button>
-                    <button type="button" class="btn btn-default"> Large </button>
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+            </nav>
 
-            </p>
-        </div>
-    </div>
-    
-    <div class = "container">
-        <div class ="row">
+            <h2>Welcome to My Portfolio!</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-            <!-- Columns Examples -->
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <h4>Column 1</h4>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla 
-                    at libero at finibus a pretium justo nulla sit amet nunc. Vestibulum finibus, 
-                    lacus at gravida condimentum, tellus mauris imperdiet orci.
-            </div>
-            
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <h4>Column 2</h4>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla 
-                    at libero at finibus a pretium justo nulla sit amet nunc. Vestibulum finibus, 
-                    lacus at gravida condimentum, tellus mauris imperdiet orci.
-            </div>
+            <div class="line"></div>
 
-            <!-- If column 3 were to have less text and content pon webpage is bigger, use div class below -->
-            <div class="clearfix visible-sm"></div>
+            <h2>Lorem Ipsum Dolor</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <h4>Column 3</h4>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla 
-                    at libero at finibus a pretium justo nulla sit amet nunc. Vestibulum finibus, 
-                    lacus at gravida condimentum, tellus mauris imperdiet orci.
-            </div>
+            <div class="line"></div>
 
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                <h4>Column 4</h4>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla 
-                    at libero at finibus a pretium justo nulla sit amet nunc. Vestibulum finibus, 
-                    lacus at gravida condimentum, tellus mauris imperdiet orci.
-            </div>
+            <h2>Lorem Ipsum Dolor</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            <div class="line"></div>
+
+            <h3>Lorem Ipsum Dolor</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
+     <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
-            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
-                <h4><a href="#col1Content" data-toggle="collapse"> Collapse Column 1</a></h4>
-                <div id="col1Content" class="collapse in">Lorem ipsum dolor 
-                sit amet, consectetur adipiscing elit. Aenean fringilla at libero at 
-                finibus a pretium justo nulla sit amet nunc. Vestibulum finibus, lacus at 
-                gravida condimentum, tellus mauris imperdiet orci.
-                </div>
-            </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+        });
+    </script>
 
-            <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
-                <h4><a href="#col2Content" data-toggle="collapse"> Collapse Column 2</a></h4>
-                <div id="col2Content" class="collapse">Lorem ipsum dolor 
-                sit amet, consectetur adipiscing elit. Aenean fringilla at libero at 
-                finibus a pretium justo nulla sit amet nunc. Vestibulum finibus, lacus at 
-                gravida condimentum, tellus mauris imperdiet orci.
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    </body>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
-  </body>
+</body>
 </html>
